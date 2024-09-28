@@ -1,0 +1,124 @@
+/**
+ * rofi -dump-theme output.
+ * Rofi version: 1.7.5
+ **/
+* {
+    Blue: #203e70FF;
+    DarkBlue: #1a3059FF;
+    DarkerBlue: #102444FF;
+    LightBlue: #8da9c4FF;
+    White: #eef4edFF;
+    Black: #252525FF;
+
+    background:                  var(White);
+    foreground:                  var(Black);
+    bordercolor:                      var(DarkerBlue);
+    listBackground:              var(background);
+    promptBackground:            var(Blue);
+    promptForeground:            var(White);
+    promptBordercolor:                var(White);
+
+    ActiveBackground: var(LightBlue);
+    ActiveForeground: var(Black);
+
+}
+window {
+    padding:          5;
+    background-color: var(background);
+    border:           1;
+    border-radius:  24px;
+
+}
+
+mainbox {
+    padding: 0;
+    border:  0;
+}
+
+message {
+    padding:      5px ;
+    border-color: var(bordercolor);
+    border:       1px 0px 0px ;
+}
+
+textbox {
+    text-color: var(foreground);
+}
+
+listview {
+    columns:      2;
+    padding:      2px 0px 0px ;
+    scrollbar:    true;
+    border-color: var(bordercolor);
+    spacing:      2px ;
+    fixed-height: 0;
+    border:       0px 0px 0px ;
+}
+
+element {
+    padding: 1px ;
+    border:  0;
+}
+
+element selected.normal {
+    border:       1;
+    border-color: var(ActiveBackground);
+    border-radius:  24px;
+    background-color: var(ActiveBackground);
+    text-color:       var(ActiveForeground);
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+scrollbar {
+    width:        4px ;
+    padding:      0;
+    handle-width: 8px ;
+    border:       0;
+}
+mode-switcher {
+    border-color: var(bordercolor);
+    border:       2px 0px 0px ;
+}
+button {
+    spacing:    0;
+    text-color: var(foreground);
+}
+button selected {
+    background-color: var(ActiveBackground);
+    text-color:       var(ActiveForeground);
+}
+inputbar {
+    padding:    5px ;
+    spacing:    0;
+    border: 2;
+    background-color: var(promptBackground);
+    text-color: var(foreground);
+    border-radius:  24px;
+    children:   [ "prompt","entry"];
+    border-color: var(promptBordercolor);
+}
+
+entry {
+    background-color: var(promptBackground);
+    placeholder: "Search for Installer";
+    spacing:    0;
+    margin: 4;
+    text-color: var(promptForeground);
+}
+
+prompt {
+    background-color: var(promptBackground);
+    spacing:    0;
+    text-color: var(promptForeground);
+}
+
+textbox-prompt-colon {
+    margin:     0px 0.3000em 0.0000em 0.0000em ;
+    expand:     false;
+    str:        ":";
+    text-color: var(foreground);
+}
