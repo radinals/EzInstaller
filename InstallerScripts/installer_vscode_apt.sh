@@ -18,4 +18,6 @@ rm -f packages.microsoft.gpg
 
 printf "%s\n" "Installing Visual Studio Code"
 
+apt update
+
 apt install code -y
