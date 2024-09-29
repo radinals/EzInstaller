@@ -1,0 +1,17 @@
+VSCode,Visual Studio Code Text Editor,installer_vscode_apt.sh
+Emacs,Emacs IDE with Doom Framework,installer_doom_emacs_apt.sh 
+Emacs,Plain GNU Emacs IDE,installer_emacs_apt.sh
+Yarn,Javascript Package Manager,installer_yarn_apt.sh
+Node.js, Node.js [NodeSource],installer_nodejs_nodesource.sh
+Node.js, Node.js [NVM],installer_nodejs_nvm.sh
+Docker,some_desc,installer_docker_apt.sh
+Deno,some_desc,installer_deno.sh
+Google Chrome,some_desc,installer_googlechrome_apt.sh
+Node Version Manager (NVM), some_desc, installer_nvm.sh
+Ansible,some_desc,installer_ansible.sh
+Sublime Text, some_desc, installer_sublime_apt.sh
+Composer,some_desc,installer_composer.sh
+Pyenv,some_desc,installer_pyenv.sh
+GNS3,some_desc,installer_gns3_apt_sh
+Virtualbox,some_desc,installer_virtualbox_apt.sh
+QEMU,some_desc,installer_qemu_apt.sh
